@@ -21,6 +21,6 @@ public class NhapHoTen {
         System.out.print("Nhap nam sinh: ");
         namSinh = sc.nextInt();
         
-        System.out.printf("Ho ten %s, tuoi: %d \n", hoTen, 2026 - namSinh);
+        System.out.printf("Ho ten %s, tuoi: %d \n", hoTen, 2026 - namSinh); 
     }
 }
