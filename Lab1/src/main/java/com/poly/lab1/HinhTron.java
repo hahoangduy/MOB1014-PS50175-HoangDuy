@@ -22,6 +22,6 @@ public class HinhTron {
         cv = 2 * PI * r;
         dt = PI * (r*r);
         
-        System.out.printf("Ban kinh: %.2f\nChu vi: %.2f\nDien tich: %.2f", r, cv, dt);
+        System.out.printf("Ban kinh: %.2f\nChu vi: %.2f\nDien tich: %.2f", r, cv, dt); 
     }
 }
