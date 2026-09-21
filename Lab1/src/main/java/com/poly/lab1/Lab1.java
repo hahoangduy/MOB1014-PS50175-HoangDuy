@@ -10,6 +10,6 @@ package com.poly.lab1;
  */
 public class Lab1 {
     public static void main(String[] args) {
-        System.out.println("Ho ten: Ha Hoang Duy, MSSV: PS50175"); 
+        System.out.println("Ho ten: Ha Hoang Duy, MSSV: PS50175");
     }
 }
