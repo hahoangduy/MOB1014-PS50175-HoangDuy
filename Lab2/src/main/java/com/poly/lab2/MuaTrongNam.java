@@ -14,9 +14,11 @@ public class MuaTrongNam {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int thang;
+        
         String mua = "";
         System.out.print("Nhap thang: ");
         thang = sc.nextInt();
+        
         switch (thang) {
             case 1, 2, 3:
                 mua = "Mua xuan";
