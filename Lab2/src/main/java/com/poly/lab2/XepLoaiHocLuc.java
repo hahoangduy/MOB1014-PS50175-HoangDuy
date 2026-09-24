@@ -38,6 +38,7 @@ public class XepLoaiHocLuc {
             else 
                 xepLoai = "Yeu";
         }
+        
         System.out.printf("Diem trung binh: %.2f \n", diemTB);
         System.out.printf("Xep loai: %s", xepLoai);
     }
