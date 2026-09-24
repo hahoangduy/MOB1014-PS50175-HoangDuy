@@ -15,6 +15,7 @@ public class MayTinh {
         Scanner sc = new Scanner(System.in);
         double a, b, ketQua = 0;
         char op;
+        
         System.out.print("Nhap vao so a: ");
         a = sc.nextDouble();
         System.out.print("Nhap vao so b: ");
