@@ -19,6 +19,7 @@ public class TrungBinhChia3 {
         double trungBinh;
         System.out.print("Nhap vao so n: ");
         n = sc.nextInt();
+        
         if (n <= 0)
             System.out.println("N phai la so nguyen duong!");
         else {
