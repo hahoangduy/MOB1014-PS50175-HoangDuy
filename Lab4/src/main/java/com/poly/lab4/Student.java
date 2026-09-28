@@ -15,6 +15,18 @@ public class Student {
     public String name;
     public int age;
     public double gpa;
+
+    public Student() {
+    }
+    
+    public Student(String id, String name, int age, double gpa) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.gpa = gpa;
+    }
+    
+    
     
     public void input(Scanner sc) {
         
