@@ -32,9 +32,11 @@ public class Student {
         sc.nextLine();
     }
     
+    
     public void output() {
         System.out.println("ID: " + this.id + " | Ho ten: " + this.name + " | Tuoi: " + this.age + " | GPA: " + this.gpa + " | Xep loai: " + rank());
     }
+    
     
     public String rank() {
         if (this.gpa >= 9.0)
