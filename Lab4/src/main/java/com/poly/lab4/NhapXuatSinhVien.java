@@ -19,5 +19,9 @@ public class NhapXuatSinhVien {
         sv2.input(sc);
         sv1.output();
         sv2.output();
+        
+        Student sv3 = sv1;
+        sv3.setName("Test");
+        sv1.output();
     }
 }
