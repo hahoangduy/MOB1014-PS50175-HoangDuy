@@ -16,7 +16,6 @@ public class KhoiTaoSinhVien {
         Student sv1 = new Student("PS001", "Nguyen Van An", 19, 8.25);
         sv1.output();
         
-        
         Student sv2 = new Student();
         sv2.output();
         sv2.input(sc);
