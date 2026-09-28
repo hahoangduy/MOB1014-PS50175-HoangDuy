@@ -49,7 +49,6 @@ public class TimKiemSapXep {
                 }
             }
         }
-        
         System.out.println("Mang giam dan (Bubble Sort): " + Arrays.toString(a));
         int[] b = Arrays.copyOf(a, a.length);       
         Arrays.sort(b);
