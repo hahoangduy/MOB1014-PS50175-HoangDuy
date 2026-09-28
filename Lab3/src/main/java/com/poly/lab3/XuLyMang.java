@@ -14,7 +14,6 @@ public class XuLyMang {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n, tong = 0;
-        
         do {            
             System.out.print("Nhap so phan tu: ");
             n = sc.nextInt();
