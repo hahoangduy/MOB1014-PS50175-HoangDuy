@@ -11,10 +11,10 @@ import java.util.Scanner;
  * @author DELL
  */
 public class Student {
-    public String id;
-    public String name;
-    public int age;
-    public double gpa;
+    private String id;
+    private String name;
+    private int age;
+    private double gpa;
 
     public Student() {
     }
@@ -25,8 +25,44 @@ public class Student {
         this.age = age;
         this.gpa = gpa;
     }
-    
-    
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public double getGpa() {
+        return gpa;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        if (age < 0)
+            System.out.println("Tuoi khong hop le");
+        else 
+            this.age = age;
+    }
+
+    public void setGpa(double gpa) {
+        if (gpa < 0 || gpa > 10)
+            System.out.println("GPA khong hop le");
+        else 
+            this.gpa = gpa;
+    }
     
     public void input(Scanner sc) {
         
