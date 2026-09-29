@@ -17,6 +17,7 @@ public class NhapXuatLaptop {
         Scanner sc = new Scanner(System.in);
         List<Laptop> list = new ArrayList<>();
         String choice;
+        
         do {
             Laptop lt = new Laptop();
             lt.input(sc);
