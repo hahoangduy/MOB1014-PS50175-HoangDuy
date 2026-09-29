@@ -51,11 +51,7 @@ public class Circle {
 
     @Override
     public String toString() {
-        return "Hinh tron " + 
-                "[ban kinh=" + radius +
-                ", mau=" + color + 
-                ", chu vi=" + getPerimeter() +
-                ", dien tich=" + getArea() + "]";
+        return String.format("Hinh tron [ban kinh=%.1f, mau=%s, chu vi=%.2f, dien tich=%.2f",radius, color, getPerimeter(), getArea());
     }
     
     
