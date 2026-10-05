@@ -4,7 +4,6 @@
 
 package com.poly.asm;
 
-import java.awt.Choice;
 import java.util.Scanner;
 
 /**
