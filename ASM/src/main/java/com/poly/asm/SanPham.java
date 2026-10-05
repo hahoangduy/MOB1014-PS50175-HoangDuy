@@ -29,9 +29,13 @@ public class SanPham {
     
     public void nhap() {
         Scanner sc = new Scanner(System.in);
+        String maSPMau = "^SP[0-9]{3}$";
         System.out.print("Nhap ma san pham: ");
         this.maSP = sc.nextLine();
-        
+        if (!maSP.matches(maSPMau)){
+            System.out.println("Ma SP phai co dang SPxxx (x la chu so)");
+            return;
+        }
         System.out.print("Nhap ten san pham: ");
         this.tenSP = sc.nextLine();
         
