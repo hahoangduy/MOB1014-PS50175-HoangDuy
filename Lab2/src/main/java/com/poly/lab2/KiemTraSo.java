@@ -22,11 +22,11 @@ public class KiemTraSo {
             System.out.printf("%d la so le \n", n);
         
         
-        if (n > 0) 
+        if (n > 0)
             System.out.printf("%d la so duong \n", n);
-        else if (n < 0) 
+        else if (n < 0)
             System.out.printf("%d la so am \n", n);
-        else 
+        else
             System.out.printf("%d bang 0 \n", n);
         
     }
