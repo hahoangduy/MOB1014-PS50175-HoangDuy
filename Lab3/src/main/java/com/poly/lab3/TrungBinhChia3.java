@@ -4,8 +4,6 @@
  */
 package com.poly.lab3;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -29,13 +27,13 @@ public class TrungBinhChia3 {
                     tong += i;
                 }
             }
-            if (dem == 0)
+            if (dem == 0) 
                 System.out.println("Khong co so nao chia het cho 3");
             else {
                 trungBinh = (double) tong / dem;
                 System.out.print("Cac so chia het cho 3: ");
                 for (int i = 1; i <= n; i++) {
-                    if (i % 3 == 0)
+                    if (i % 3 == 0) 
                         System.out.print(i + " ");
                 }
                 System.out.println();
