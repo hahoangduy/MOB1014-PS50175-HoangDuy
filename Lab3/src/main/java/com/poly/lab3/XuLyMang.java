@@ -14,7 +14,7 @@ public class XuLyMang {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n, tong = 0;
-        do {            
+        do {
             System.out.print("Nhap so phan tu: ");
             n = sc.nextInt();
         } while (n <= 0);
@@ -34,7 +34,7 @@ public class XuLyMang {
         
         System.out.print("Cac phan tu chan: ");
         for (int so : a) {
-            if (so % 2 == 0)
+            if (so % 2 == 0) 
                 System.out.print(so + " ");
         }
         System.out.println();
