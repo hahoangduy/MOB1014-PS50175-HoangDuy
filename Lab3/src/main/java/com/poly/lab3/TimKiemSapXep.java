@@ -17,7 +17,7 @@ public class TimKiemSapXep {
         int n, x;
         boolean timThay = false;
         
-        do {            
+        do {
             System.out.print("Nhap so phan tu: ");
             n = sc.nextInt();
         } while (n <= 0);
@@ -50,7 +50,7 @@ public class TimKiemSapXep {
             }
         }
         System.out.println("Mang giam dan (Bubble Sort): " + Arrays.toString(a));
-        int[] b = Arrays.copyOf(a, a.length);       
+        int[] b = Arrays.copyOf(a, a.length);
         Arrays.sort(b);
         System.out.print("Mang tang dan (Arrays.sort): " + Arrays.toString(b));
     }
