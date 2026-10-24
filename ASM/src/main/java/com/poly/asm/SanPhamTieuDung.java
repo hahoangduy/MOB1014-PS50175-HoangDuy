@@ -17,8 +17,8 @@ public class SanPhamTieuDung extends SanPham{
     }
 
     @Override
-    public void capNhat() {
-        super.capNhat();
+    public void capNhat(String idUpdate) {
+        super.capNhat(idUpdate);
     }
 
     @Override

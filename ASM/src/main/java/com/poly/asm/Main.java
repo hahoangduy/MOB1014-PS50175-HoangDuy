@@ -4,6 +4,7 @@
  */
 package com.poly.asm;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -14,7 +15,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int choice;
-        SanPham sp = new SanPham();
+        ArrayList<SanPham> list = new ArrayList<>();
         
         do {
             System.out.println("=== MENU CHUONG TRINH ===");
@@ -29,16 +30,32 @@ public class Main {
             
             switch (choice) {
                 case 1:
-                    sp.nhap();
+                    list.add(new SanPham("SP001", "Dien Thoai", 1000000, 2));
+                    list.add(new SanPhamDienTu("SP002", "LapTop", 1600000, 9, "20/1"));
+                    list.add(new SanPhamDienTu("SP003", "PC", 2900000, 5, "29/5"));
+                    list.add(new SanPhamTieuDung("SP004", "Gao", 800000, 10, 0.2));
+                    list.add(new SanPhamTieuDung("SP005", "Quan Ao", 900000, 29, 0.8));
                     break;
                 case 2:
-                    sp.xuat();
+                    for (SanPham sanPham : list) {
+                        sanPham.xuat();
+                    }
                     break;
                 case 3:
-                    System.out.printf("Tong tien cua san pham %s la: %.0f VND\n",sp.maSP, sp.thanhTien());
+                    for (SanPham sanPham : list) {
+                        System.out.printf("Tong tien cua san pham %s la: %.0f VND\n",sanPham.maSP, sanPham.thanhTien());
+                    }
                     break;
                 case 4:
-                    sp.capNhat();
+                    System.out.print("Nhap id can cap nhat: ");
+                    String idUpdate = sc.nextLine();
+                    for (SanPham sanPham : list) {
+                        if (sanPham.maSP.equalsIgnoreCase(idUpdate)) {
+                            sanPham.capNhat(idUpdate);
+                            break;
+                        }
+                    }
+                    System.out.printf("Khong tim thay san pham co ma %s\ns", idUpdate);
                     break;
                 case 5:
                     System.out.println("Da thoat");

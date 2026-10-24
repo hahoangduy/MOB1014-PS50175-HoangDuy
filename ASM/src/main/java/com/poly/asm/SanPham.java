@@ -55,49 +55,42 @@ public class SanPham {
         return this.donGia * this.soLuong;
     }
     
-    public void capNhat() {
+    public void capNhat(String idUpdate) {
         int choice;
         Scanner sc = new Scanner(System.in);
-        System.out.print("Nhap ma san pham can cap nhat: ");
-        String maSPUpdate = sc.nextLine();
-        if (maSPUpdate.toLowerCase().equals(this.maSP.toLowerCase())) {
-            do {
-                System.out.println("Ban muon cap nhat thong tin?");
-                System.out.println("1. Ten san pham | 2. Don gia | 3. So luong | 4. Thoat cap nhat");
-                System.out.print("Moi chon(1-4): ");
-                choice = sc.nextInt();
-                sc.nextLine();
-                switch (choice) {
-                    case 1:
-                        System.out.print("Nhap ten moi: ");
-                        String newName = sc.nextLine();
-                        this.tenSP = newName;
-                        System.out.println("\nBan da cap nhat ten thanh cong");
-                        break;
-                    case 2:
-                        System.out.print("Nhap don gia moi: ");
-                        double newPrice = sc.nextDouble();
-                        this.donGia = newPrice;
-                        sc.nextLine();
-                        System.out.println("\nBan da cap nhat don gia thanh cong");
-                        break;
-                    case 3:
-                        System.out.print("Nhap so luong moi: ");
-                        int newQuantity = sc.nextInt();
-                        this.soLuong = newQuantity;
-                        sc.nextLine();
-                        System.out.println("\nBan da cap nhat so luong thanh cong");
-                        break;
-                    case 4:
-                        System.out.println("Da thoat!");
-                        break;
-                    default:
-                        System.out.println("Khong co chuc nang nay");
-                }
-            }while (choice != 4);
-        }
-        else {
-            System.out.println("Khong ton tai san pham nay");
-        }
+        do {
+            System.out.println("Ban muon cap nhat thong tin?");
+            System.out.println("1. Ten san pham | 2. Don gia | 3. So luong | 4. Thoat cap nhat");
+            System.out.print("Moi chon(1-4): ");
+            choice = sc.nextInt();
+            sc.nextLine();
+            switch (choice) {
+                case 1:
+                    System.out.print("Nhap ten moi: ");
+                    String newName = sc.nextLine();
+                    this.tenSP = newName;
+                    System.out.println("\nBan da cap nhat ten thanh cong");
+                    break;
+                case 2:
+                    System.out.print("Nhap don gia moi: ");
+                    double newPrice = sc.nextDouble();
+                    this.donGia = newPrice;
+                    sc.nextLine();
+                    System.out.println("\nBan da cap nhat don gia thanh cong");
+                    break;
+                case 3:
+                    System.out.print("Nhap so luong moi: ");
+                    int newQuantity = sc.nextInt();
+                    this.soLuong = newQuantity;
+                    sc.nextLine();
+                    System.out.println("\nBan da cap nhat so luong thanh cong");
+                    break;
+                case 4:
+                    System.out.println("Da thoat!");
+                    break;
+                default:
+                    System.out.println("Khong co chuc nang nay");
+            }
+        }while (choice != 4);
     }
 }
